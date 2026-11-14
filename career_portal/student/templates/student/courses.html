@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+
+    <title>Courses</title>
+
+    <link rel="stylesheet" href="{% static 'css/course.css' %}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Career Courses</h1>
+
+    <a href="/add-course/" class="add-btn">
+
+        Add New Course
+
+    </a>
+
+    <div class="course-container">
+
+        {% for course in courses %}
+
+        <div class="course-card">
+
+            <img src="{{ course.image.url }}" alt="Course Image">
+
+            <h2>{{ course.title }}</h2>
+
+            <p>{{ course.description }}</p>
+
+            <div class="buttons">
+
+                <a href="/edit-course/{{ course.id }}/" class="edit-btn">
+
+                    Edit
+
+                </a>
+
+                <a href="/delete-course/{{ course.id }}/" class="delete-btn">
+
+                    Delete
+
+                </a>
+
+            </div>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

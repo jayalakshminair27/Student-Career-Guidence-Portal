@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration</title>
+
+     <link rel="stylesheet" href="{% static 'css/register.css' %}">
+
+
+</head>
+
+<body>
+
+<!-- REGISTER SECTION -->
+
+<section class="register-section">
+
+    <div class="register-container">
+
+        <!-- LEFT SIDE -->
+
+        <div class="register-left">
+
+            <h1>
+
+                Start Your <br>
+                Career Journey
+
+            </h1>
+
+            <p>
+
+                Register now and discover the best
+                career opportunities based on your
+                skills, interests, and qualifications.
+
+            </p>
+
+              <img src="{% static 'img/register.jpg' %}" alt="Student">
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="register-right">
+
+            <form method="POST" class="register-form">
+
+                {% csrf_token %}
+
+                <h2>
+
+                    Student Registration
+
+                </h2>
+
+                <input type="text"
+                       name="name"
+                       placeholder="Enter Your Name"
+                       required>
+
+                <input type="email"
+                       name="email"
+                       placeholder="Enter Your Email"
+                       required>
+
+                <input type="text"
+                       name="qualification"
+                       placeholder="Qualification"
+                       required>
+
+                <input type="password"
+                       name="password"
+                       placeholder="Create Password"
+                       required>
+
+                <input type="text"
+                       name="interests"
+                       placeholder="Your Interests"
+                       required>
+
+                <button type="submit">
+
+                    Register Now
+
+                </button>
+
+                <p class="login-link">
+
+                    Already Registered?
+
+                    <a href="/login/">
+
+                        Login Here
+
+                    </a>
+
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+
+</html>

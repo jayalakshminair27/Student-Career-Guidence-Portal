@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Career Assessment Test</title>
+
+    <link rel="stylesheet" href="{% static 'css/test.css' %}">
+
+
+</head>
+
+<body>
+
+
+<div class="test-container">
+
+
+    <div class="test-left">
+
+        <h1>
+
+            Career Assessment Test
+
+        </h1>
+
+        <p>
+
+            Answer simple questions and discover
+            the best career path based on your interests.
+
+        </p>
+
+        <img src="{% static 'img/test.jpg' %}" alt="Career Test">
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="test-right">
+
+        <form action="/result/" class="test-form">
+
+            <h2>
+
+                Choose Your Interest
+
+            </h2>
+
+
+            <div class="question-box">
+
+                <p>
+
+                    1. Which subject do you like the most?
+
+                </p>
+
+                <label>
+
+                    <input type="radio"
+                           name="career"
+                           value="developer"
+                           required>
+
+                    Computer Science
+
+                </label>
+
+                <label>
+
+                    <input type="radio"
+                           name="career"
+                           value="designer">
+
+                    Drawing & Design
+
+                </label>
+
+                <label>
+
+                    <input type="radio"
+                           name="career"
+                           value="doctor">
+
+                    Biology & Medicine
+
+                </label>
+
+            </div>
+
+            <!-- BUTTON -->
+
+            <button type="submit">
+
+                Submit Test
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

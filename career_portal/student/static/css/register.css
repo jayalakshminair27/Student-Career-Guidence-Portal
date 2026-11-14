@@ -1,0 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Arial', sans-serif;
+
+    background:#0f172a;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+}
+
+
+.register-container{
+
+    width:1100px;
+
+    background:#111827;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    box-shadow:0 10px 35px rgba(0,0,0,0.5);
+}
+
+
+.register-left{
+
+    flex:1;
+
+    padding:60px;
+
+    background:linear-gradient(to bottom right,#111827,#1e293b);
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+}
+
+
+.register-left h1{
+
+    font-size:55px;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+    color:#facc15;
+}
+
+
+.register-left p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#cbd5e1;
+
+    margin-bottom:30px;
+}
+
+
+.register-left img{
+
+    width:240px;
+
+    height:auto;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+
+.register-right{
+
+    flex:1;
+
+    background:white;
+
+    padding:60px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+
+
+.register-form{
+
+    width:100%;
+}
+
+.register-form h2{
+
+    text-align:center;
+
+    font-size:38px;
+
+    color:#111827;
+
+    margin-bottom:35px;
+}
+
+/* INPUT */
+
+.register-form input{
+
+    width:100%;
+
+    padding:18px;
+
+    margin-bottom:22px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background: #cfa60c;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:0.3s;
+}
+
+.register-form input:focus{
+
+    border:2px solid #facc15;
+
+    background: #e7b908;
+}
+
+/* BUTTON */
+
+.register-form button{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#facc15;
+
+    color:#111827;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.register-form button:hover{
+
+    background:#fde047;
+
+    transform:translateY(-3px);
+}
+
+/* LOGIN LINK */
+
+.login-link{
+
+    text-align:center;
+
+    margin-top:20px;
+
+    color:#555;
+}
+
+.login-link a{
+
+    color:#facc15;
+
+    text-decoration:none;
+
+    font-weight:bold;
+}
+
+.login-link a:hover{
+
+    color:#d4a017;
+}

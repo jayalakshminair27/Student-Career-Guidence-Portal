@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+
+<h1>Student Dashboard</h1>
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Qualification</th>
+        <th>Interest</th>
+        <th>Password</th>
+    </tr>
+
+    {% for student in student %}
+    <tr>
+        <td>{{ student.name }}</td>
+        <td>{{ student.email }}</td>
+        <td>{{ student.qualification }}</td>
+        <td>{{ student.interests }}</td>
+        <td>{{ student.password }}</td>
+        
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>
